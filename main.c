@@ -103,7 +103,7 @@ int main(){
     //cast
      long double ldblLongDouble = 105.8933259635;
 
-     printf("Valeur de ldblLongDouble : %lf",(double)ldblLongDouble);
+     printf("Valeur de ldblLongDouble : %lf\n",(double)ldblLongDouble);
 
      //opérateur relationel
      // >
@@ -132,6 +132,17 @@ int main(){
 
      //travailler un exemple de Condition en C qui sera découper en 2 solution la 1er sans opérateur logique et la seconde avec opérateur logique
      // l'un des deux exemples doit inclure un si
+      long int liXequal;
+      long int liYequal;
+      scanf(liXequal);
+      scanf(liYequal);
+
+     if(liXequal = liYequal)
+            printf("les valeur x et y sont equivalents %c");
+    else{
+            printf("les valeur x et y ne sont pas equivalents %c\n");
+    }
+
 
      //faire un exemple avec une boucle pour, un exeple avec une boucle tant que , un exepmle avec une boucle faire tant que.
 
