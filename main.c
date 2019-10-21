@@ -130,23 +130,93 @@ int main(){
 
      // nA+nB
 
-     //travailler un exemple de Condition en C qui sera découper en 2 solution la 1er sans opérateur logique et la seconde avec opérateur logique
-     // l'un des deux exemples doit inclure un si
-      long int liXequal;
-      long int liYequal;
-      scanf(liXequal);
-      scanf(liYequal);
 
-     if(liXequal = liYequal)
-            printf("les valeur x et y sont equivalents %c");
-    else{
-            printf("les valeur x et y ne sont pas equivalents %c\n");
-    }
+         int a=0,b=0,c=0,d=0;
+         //condition
+
+         if(a==b){
+            printf("ils sont egaux\n");
+         }else{
+            printf("ils sont differents\n");
+         }
+
+         //condition avec operateur logique
+
+         if((a==b) && (a==c)){
+            printf("Ils sont tous egaux\n");
+         }else{
+            printf("Ils sont differents\n");
+         }
+
+         if((a==b)|| (a==c)){
+            printf("ils sont egaux\n");
+         }else{
+            printf("ils sont different\n");
+         }
 
 
-     //faire un exemple avec une boucle pour, un exeple avec une boucle tant que , un exepmle avec une boucle faire tant que.
+         if((a==b)||(a==c)){
+            printf(("ils sont egaux\n");
+         }else if((a==c)&&(a!=d)){
+                    printf("blablabla...\n");
+                   }
+        //boucle
 
-     //rechercher ub exemple avec l'oppérateur ternaire
+        int i=0;
+
+        for (i=0;i<NFOIS,i++){
+            printf("HELLO WOLRD\n");
+        }
+
+        //Tant que
+        i=0;
+
+        while(i<NFOIS){
+            printf("HELLO WOLRD\n");
+            i++;
+        }
+
+        //Faire tant que
+
+        i=0;
+        do{
+            printf("HELLO WORLD\n");
+            i++;
+
+        }while (i<TAILLE);
+
+        //Cas alternatif de la condition
+
+        int choix= -1;
+            printf("Veuillez entrez votre choix\n");
+            scanf("%d",&choix);
+        switch(choix){
+            case 0: printf("Quitter\n");break;
+            case 1: printf("Calculer\n");break;
+            case 2: printf("jouer\n");break;
+            default : printf("default\n");break;
+        }
+
+        //test ? Instruction1: Instruction 2
+
+    (a==b) ? printf("Egaux\n"): printf("diff\n");
+
+    //instruction break
+
+        for (i=0;i<NFOIS;i++){
+            if(i==3){
+                break;
+            }
+        }
+
+        //instruction continue;
+
+        for(i=0;i<NFOIS;i++){
+            printf("HELLO WOLRD\n");
+            if (i<3){
+                printf("continue\n");continue;
+            }
+        }
 
 
     return 0;
